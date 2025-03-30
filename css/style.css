@@ -415,6 +415,10 @@ section h2 {
   background-color: #009688;
 }
 
+.hero-btn:visited {
+  color: white;
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -1012,6 +1016,20 @@ button[type="submit"] {
 
 button[type="submit"]:hover {
   background-color: #009688;
+}
+
+@media screen and (max-width: 768px) {
+  #contacto .container .contact-info, #contacto .container {
+    width: 100%;
+  }
+
+  .contact-form {
+    width: 100%;
+  }
+
+  #contacto .container .contact-info div {
+    flex: 1 1 100%;
+  }
 }
 
 .site-footer {

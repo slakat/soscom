@@ -6,3 +6,4 @@ dist
 .cache
 
 .ds_store
+.idea
