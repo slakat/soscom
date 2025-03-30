@@ -923,6 +923,7 @@ img.img-decorator {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
   filter: brightness(0.85) contrast(1.05) saturate(1.2);
   transition: transform 0.4s ease, box-shadow 0.4s ease;
+  height: 200px;
 }
 
 /* Efecto al pasar el mouse */
@@ -930,6 +931,32 @@ img.img-decorator:hover {
   transform: scale(1.05) rotate(-1deg);
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
 }
+
+/* media queries */
+@media screen and (max-width: 768px) {
+  .servicio-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .servicio-item {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .servicio-item .icon {
+    margin-bottom: 10px;
+  }
+
+  .servicio-item p {
+    font-size: 0.9rem;
+  }
+
+  img.img-decorator {
+    height: 120px;
+  }
+}
+
+
 /* Contacto Section */
 
 .contacto-section {
